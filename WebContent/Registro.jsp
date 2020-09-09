@@ -4,29 +4,45 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Registro</title>
+<title>Insert title here</title>
 </head>
 <body>
-<h1>ReChord</h>
-<h2>Datos Personales</h2>
-<form action="DatosRegistro">
-	<div>Correo electrónico: <input type="text" name="correo"/></div>
-	<div>&nbsp;</div>
-	<div>Nombre: <input type="text" name="nombre"/></div>
-	<div>&nbsp;</div>
-	<div>Apellido: <input type="text" name="apellido"/></div>
-	<div>&nbsp;</div>
-	<div>Usuario: <input type="text" name="usuario"/></div>
-	<div>&nbsp;</div>
-	<div>Contraseña: <input type="text" name="pass"/></div>
-	<div>&nbsp;</div>
-	
-	<div><label for="start">Día de nacimiento:</label>
-		<input type="date" id="start" name="fecha"
-       	value="2020-09-09"
-       	min="1980-01-01" max="2019-12-31"></div>
-       	<div>&nbsp;</div><br/>
-	
-	<div><input type="submit" value="Cancelar"/> <input type="submit" value="Registrar"/></div>
+    <div id="registrar">
+            
+    </div>
+    <div id="envoltura">
+        <div id="contenedor">
+ 
+            <div id="cuerpo">
+ 
+                <form id="form-login" action="#" method="post" >
+                    <p><label for="nombre">Nombre:</label></p>
+                        <input name="nombre" type="text" id="nombre" class="nombre" placeholder="Pon tu nombre" autofocus=""/ ></p>
+ 
+                    <!--=============================================================================================-->
+                    <!--La sisguientes 2 líneas son para agregar campos al formulario con sus respectivos labels-->
+                    <!--Puedes usar tantas como necesites-->
+                    <p><label for="apellidos">Apellidos:</label></p>
+                        <input name="apellidos" type="text" id="apellidos" class="apellidos" placeholder="Pon tus apellidos" /></p>
+                    <!--=============================================================================================-->
+ 
+                    <p><label for="correo">Correo:</label></p>
+                        <input name="correo" type="text" id="correo" class="correo" placeholder="Pon tu mail" /></p>
+ 
+                    <p><label for="pass">Password:</label></p>
+                        <input name="pass" type="password" id="pass" class="pass" placeholder="Pon tu contraseña"/ ></p>
+ 
+                    <p><label for="repass">Repetir Password:</label></p>
+                        <input name="repass" type="password" id="repass" class="repass" placeholder="Repite contraseña" /></p>
+ 
+                    <p id="bot"><input name="submit" type="submit" id="boton" value="Registrar" class="boton"/></p>
+                    <p id="bot"><input name="submit" type="submit" id="boton" value="Cancelar" class="boton"/></p>
+                </form>
+            </div>
+ 
+            <div id="pie">Sistema de Login Y Registro</div>
+        </div><!-- fin contenedor -->
+ 
+    </div>
 </body>
 </html>
