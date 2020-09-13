@@ -43,5 +43,6 @@
 			<input type="submit" value="Cancelar" /> <input type="submit"
 				value="Registrar" />
 		</div>
+	</form>
 </body>
 </html>
