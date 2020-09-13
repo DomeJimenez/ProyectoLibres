@@ -10,7 +10,7 @@ import javax.persistence.Id;
 public class Usuario {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id;
+	private Integer idUsuario;
 	@Column
 	private String email;
 	@Column
@@ -22,13 +22,13 @@ public class Usuario {
 	@Column
 	private String contrasenia;
 	@Column
-	private String date;
+	private String fecha;
 	
 	public Integer getId() {
-		return id;
+		return idUsuario;
 	}
-	public void setId(Integer id) {
-		this.id = id;
+	public void setId(Integer idUsuario) {
+		this.idUsuario = idUsuario;
 	}
 	public String getEmail() {
 		return email;
@@ -61,10 +61,10 @@ public class Usuario {
 		this.contrasenia = contrasenia;
 	}
 	public String getDate() {
-		return date;
+		return fecha;
 	}
-	public void setDate(String date) {
-		this.date = date;
+	public void setDate(String fecha) {
+		this.fecha = fecha;
 	}
 	
 }
