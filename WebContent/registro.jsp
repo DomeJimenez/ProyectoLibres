@@ -10,6 +10,7 @@
 <h1>ReChord</h>
 <h2>Datos Personales</h2>
 <form action="Registro">
+
 	<div>Correo electrónico: <input type="text" name="correo"/></div>
 	<div>&nbsp;</div>
 	<div>Nombre: <input type="text" name="nombre"/></div>
